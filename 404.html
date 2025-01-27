@@ -28,7 +28,19 @@
 
         <!-- Template Stylesheet -->
         <link href="css/style.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     </head>
+
+    <script>
+        function getQuote(){
+            Swal.fire({
+                title: 'Get a quote',
+                text: 'Kindly contact us on +254 722 230 000 to get a custom quote that is tailored to your business needs.',
+                icon: 'success',
+                confirmButtonText: 'Ok'
+            })
+        }
+    </script>
 
     <body>
 

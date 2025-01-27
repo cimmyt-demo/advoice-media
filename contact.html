@@ -28,7 +28,20 @@
 
         <!-- Template Stylesheet -->
         <link href="css/style.css" rel="stylesheet">
+
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     </head>
+
+<script>
+        function getQuote(){
+            Swal.fire({
+                title: 'Get a quote',
+                text: 'Kindly contact us on +254 722 230 000 to get a custom quote that is tailored to your business needs.',
+                icon: 'success',
+                confirmButtonText: 'Ok'
+            })
+        }
+    </script>
 
     <style>
         .text-warning{
@@ -92,9 +105,12 @@
         <div class="container-fluid nav-bar px-0 px-lg-4 py-lg-0">
             <div class="container">
                 <nav class="navbar navbar-expand-lg navbar-light"> 
-                    <a href="index.html" class="navbar-brand p-0">
-                        <h2 class="text-warning mb-0"><strong>Advoice<span class="text-dark">Media</span></strong></h2>
-                        <!-- <img src="img/logo.png" alt="Logo"> -->
+                    <a href="index.html" class="navbar-brand p-0 d-flex justify-content-start align-items-center">
+                        <img src="img/advoice_logo.png" alt="Logo">
+                        <span class="px-3">
+                            <hr style="width: 1px; height: 50px; transform: rotate(180deg); background: black; border: none;">
+                        </span>
+                        <h2 class="text-warning mb-0 mx-2"><strong>Advoice<span class="text-dark">Media</span></strong></h2>
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                         <span class="fa fa-bars"></span>
@@ -108,7 +124,7 @@
                             <a href="contact.html" class="nav-item nav-link active">Contact</a>
                             <div class="nav-btn px-3">
                                 <button class="btn-search btn btn-warning btn-md-square rounded-circle flex-shrink-0" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fas fa-search"></i></button>
-                                <a href="#!" class="btn btn-warning rounded-pill py-2 px-4 ms-3 flex-shrink-0"> Get a Quote</a>
+                                <a href="#!" onclick="getQuote()" class="btn btn-warning rounded-pill py-2 px-4 ms-3 flex-shrink-0"> Get a Quote</a>
                             </div>
                         </div>
                     </div>
