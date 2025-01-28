@@ -49,6 +49,16 @@
         .bg-warning{
             background-color: darkorange !important;
         }
+
+        .video-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
     </style>
 
     <body>
@@ -111,9 +121,11 @@
                         </span>
                         <h2 class="text-warning mb-0 mx-2"><strong>Advoice<span class="text-dark">Media</span></strong></h2>
                     </a>
+                    <!--
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                         <span class="fa fa-bars"></span>
                     </button>
+                     -->
                     <div class="collapse navbar-collapse" id="navbarCollapse">
                         <div class="navbar-nav mx-0 mx-lg-auto">
                             <a href="index.html" class="nav-item nav-link active">Home</a>
@@ -166,8 +178,12 @@
 
 
         <!-- Carousel Start -->
+        <video class="video-background" autoplay muted loop>
+            <source src="img/videos/nightlife.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
         <div class="header-carousel owl-carousel">
-            <div class="header-carousel-item bg-dark">
+            <div class="header-carousel-item" style="background-color: rgb(0,0,0,0.6);">
                 <div class="carousel-caption">
                     <div class="container">
                         <div class="row g-4 align-items-center">
@@ -190,20 +206,20 @@
                             </div>
                             <div class="col-lg-5 animated fadeInRight">
                                 <div class="calrousel-img" style="object-fit: cover;">
-                                    <img src="img/brand.png" class="img-fluid w-100" alt="">
+                                    <img src="img/brands.png" class="img-fluid w-100" alt="">
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="header-carousel-item bg-dark">
+            <div class="header-carousel-item" style="background-color: rgb(0,0,0,0.6);">
                 <div class="carousel-caption">
                     <div class="container">
                         <div class="row gy-4 gy-lg-0 gx-0 gx-lg-5 align-items-center">
                             <div class="col-lg-5 animated fadeInLeft">
                                 <div class="calrousel-img">
-                                    <img src="img/brand.png" class="img-fluid w-100" alt="">
+                                    <img src="img/brands.png" class="img-fluid w-100" alt="">
                                 </div>
                             </div>
                             <div class="col-lg-7 animated fadeInRight">
@@ -394,7 +410,7 @@
                     <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.2s">
                         <div class="service-item">
                             <div class="service-img">
-                                <img src="img/malls.jpg" class="img-fluid rounded-top w-100" alt="">
+                                <img src="img/locations/IMG_9420.jpg" class="img-fluid rounded-top w-100" alt="">
                                 <div class="service-icon p-3">
                                     <i class="fa fa-users fa-2x"></i>
                                 </div>
