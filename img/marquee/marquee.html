@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Logo Marquee</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    .marquee {
+      overflow: hidden;
+      white-space: nowrap;
+      position: relative;
+      background-color: #000;
+      padding: 10px 0;
+    }
+
+    .marquee-content {
+      display: inline-block;
+      animation: scroll 10s linear infinite;
+    }
+
+    .marquee-content img {
+      height: 50px;
+      margin: 0 20px;
+    }
+
+    @keyframes scroll {
+      0% {
+        transform: translateX(100%);
+      }
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="marquee">
+    <div class="marquee-content">
+      <img src="001.svg"  alt="Logo 1">
+      
+      <img src="kenya-airways-logo.svg" style="background-color: #ee1c25;padding: 5px;border-radius: 12px;" alt="Logo 2">
+      <img src="coop-bank-logo.png" alt="Logo 3">
+      <img src="windsor.png" style="background-color: white;padding: 5px;border-radius: 12px;" alt="Logo 4">
+      
+      <img src="faras.png" alt="">
+      <img src="naivas.webp" alt="">
+      <img src="unilever.png"  style="background-color: white;padding: 5px;border-radius: 12px;" alt="Logo 5">
+      <img src="sportpesa.png" alt="">
+      
+    </div>
+  </div>
+</body>
+</html>
